@@ -12,7 +12,7 @@
 
 </div>
 <script>
-    let socket = io(window.location.origin + ':8080');
+    let socket = io(window.location.hostname + ':8080');
     Socket.register(socket, '1111111');
     socket.on('connect', function () {
         document.getElementById('click').addEventListener('click', function () {
